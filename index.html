@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Player</title>
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="player">
+    <div id="cover">
+      <img id="poster" src="https://i.ytimg.com/vi/Ww9UY82KOgg/maxresdefault.jpg" alt="">
+    </div>
+    <div id="controls">
+      <div id="info">
+        <h1 id="title">Ecstasy</h1>
+        <h2 id="author">ATB</h2>
+      </div>
+      <div id="Time">0:00</div>
+      <input id="currentTime" type="range" value="0" min="0" max="100" oninput="changeCurrentTime()">
+      <div id="buttons">
+        <button id="previousButton" onclick="previousSong()" type="button">&lsaquo;</button>
+        <button id="pauseButton" onclick="pause()" type="button">&rtrif;</button>
+        <button id="nextButton" onclick="nextSong()" type="button">&rsaquo;</button>
+        <input id="volume" type="range" max="100" oninput="changeVolume()">
+      </div>
+    </div>
+    <audio id="myAudio"autoplay loop>
+      <source id="audio-player" src="ATB-Ecstasy.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div id="playlist"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+body,
+html {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background: rgb(27, 1, 7);
+    background: -moz-linear-gradient(left, rgba(27, 1, 7) 0%, rgba(27, 1, 7) 50%, rgba(27, 1, 7) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(27, 1, 7)), color-stop(50%, rgba(27, 1, 7)), color-stop(100%, rgba(27, 1, 7)));
+    background: -webkit-linear-gradient(left, rgba(27, 1, 7) 0%, rgba(27, 1, 7) 50%, rgba(27, 1, 7) 100%);
+    background: -o-linear-gradient(left, rgba(27, 1, 7) 0%, rgba(27, 1, 7) 50%, rgba(27, 1, 7) 100%);
+    background: -ms-linear-gradient(left, rgba(27, 1, 7) 0%, rgba(27, 1, 7) 50%, rgba(27, 1, 7) 100%);
+    background: linear-gradient(to right, rgba(27, 1, 7) 0%, rgba(27, 1, 7) 50%, rgba(27, 1, 7) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#eb0037', endColorstr='#eb0037', GradientType=1);
+}
+h1 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 25px;
+}
+h2 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 20px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+#player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    color: white;
+    height: 620px;
+    width: 710px;
+}
+#cover {
+    width: 310px;
+    height: 310px;
+    border: 5px solid #c40000;
+    box-sizing: border-box;
+}
+img#poster {
+    width: 300px;
+    height: 300px;
+}
+#buttons {
+    position: relative;
+    margin-top: 30px;
+}
+#info h2 {
+    margin-bottom: 0;
+}
+#pauseButton,
+#previousButton,
+#nextButton {
+    position: absolute;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 20px;
+}
+#pauseButton {
+    left: 65px;
+}
+#previousButton {
+    left: 20px;
+}
+#nextButton {
+    left: 110px;
+}
+#pauseButton:active,
+#previousButton:active,
+#nextButton:active {
+    margin-top: 2px;
+}
+#volume {
+    position: absolute;
+    top: 0px;
+    left: 160px;
+}
+#playlist {
+    position: absolute;
+    top: 0%;
+    left: 400px;
+    width: 310px;
+    height: 310px;
+    border: 5px solid #c40000;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+#playlist h1 {
+    margin: 5px 0 0 10px;
+    font-size: 25px;
+}
+.song h2 {
+    font-size: 15px;
+    margin: 0 0 0 10px;
+}
+.active h2 {
+    color: rgb(236, 128, 128);
+}
+#Time {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+}
+#currentTime {
+    width: 80%;
+}
+#controls {
+    width: 310px;
+    height: 200px;
+}
+@media only screen and (min-width: 0px) and (max-width: 319px) {
+    body {
+        display: none;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    #player {
+        position: relative;
+        top: 20px;
+        width: 310px;
+    }
+    #playlist {
+        position: relative;
+        left: 0;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {}
